@@ -1,46 +1,58 @@
-:root {
-  --bg: #f8f9fa;
-  --text: #222;
-  --nav-bg: #fff;
-  --nav-text: #222;
-}
 
-html.dark {
-  --bg: #222;
-  --text: #f8f9fa;
-  --nav-bg: #181818;
-  --nav-text: #f8f9fa;
-}
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
 
 body {
-  margin: 0;
-  font-family: sans-serif;
-  background-color: var(--bg);
-  color: var(--text);
+  @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300;
 }
 
-/* Responsive Navbar */
-@media (max-width: 700px) {
-  nav {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 1rem !important;
+
+
+  :root {
+    --bg:gray;
+    --text: #222;
+    --nav-bg: #fff;
+    --nav-text: #222;
   }
-  nav > div,
-  nav > form {
-    width: 100%;
-    justify-content: flex-start !important;
-    margin-bottom: 0.5rem;
+
+  html.dark {
+    --bg: #222;
+    --text: #f8f9fa;
+    --nav-bg: #181818;
+    --nav-text: #f8f9fa;
   }
-  nav input[type="text"] {
-    width: 100%;
+
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
   }
-}
-.nav-hover-effect {
-  transition: transform 0.15s, font-weight 0.15s, color 0.15s;
-}
-.nav-hover-effect:hover {
-  transform: scale(1.12);
-  font-weight: bold;
-  color: #2563eb; /* Optional: a nice blue on hover */
-}
+
+  /* Responsive Navbar */
+  @media (max-width: 700px) {
+    nav {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 1rem !important;
+    }
+    nav > div,
+    nav > form {
+      width: 100%;
+      justify-content: flex-start !important;
+      margin-bottom: 0.5rem;
+    }
+    nav input[type="text"] {
+      width: 100%;
+    }
+  }
+  .nav-hover-effect {
+    transition: transform 0.15s, font-weight 0.15s, color 0.15s;
+  }
+  .nav-hover-effect:hover {
+    transform: scale(1.12);
+    font-weight: bold;
+    color: #2563eb; /* Optional: a nice blue on hover */
+  }
