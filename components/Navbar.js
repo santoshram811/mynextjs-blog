@@ -98,7 +98,7 @@ export default function Navbar() {
       </form>
       {/* Social Links */}
       <a
-        href="https://github.com/your-github-username"
+        href="https://github.com/santoshram811"
         target="_blank"
         rel="noopener noreferrer"
         title="GitHub"
@@ -110,7 +110,7 @@ export default function Navbar() {
         </svg>
       </a>
       <a
-        href="https://linkedin.com/in/your-linkedin-username"
+        href="https://www.linkedin.com/in/santosh-kumar-ram-563234224/"
         target="_blank"
         rel="noopener noreferrer"
         title="LinkedIn"
